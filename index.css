@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  background-color: #000000; }
+
+.eye {
+  margin: 0; }
+  .eye .leftEye, .eye .rigthEye {
+    float: left;
+    width: 400px;
+    height: 400px;
+    border: solid 10px #6b6565;
+    border-radius: 266.6666666667px;
+    background-color: #c9c6c6;
+    animation-name: eyes;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; }
+  .eye .leftEye {
+    margin: 100px 25px 0 500px; }
+  .eye .rigthEye {
+    margin: 100px 25px 0 25px; }
+
+@keyframes eyes {
+  0%
+    ,99% {
+    opacity: 1;
+    display: inline; }
+  100% {
+    opacity: 0;
+    display: none; } }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,47 @@
+$bg_color: #000000;
+$eye_line: #6b6565;
+html,body{
+    margin: 0;
+    background-color: $bg_color;
+}
+
+@mixin eyeCircle($size: 400px,$color:#c9c6c6){
+  float: left;
+  width: $size;
+  height: $size;
+  border: solid 10px $eye_line;
+  border-radius: ($size / 1.5);
+  background-color: $color;
+}
+
+.eye{
+    margin: 0;
+
+  .leftEye,.rigthEye{
+      @include eyeCircle();
+      animation-name: eyes;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+
+  }
+
+  .leftEye{
+      margin: 100px 25px 0 500px;
+  }
+  .rigthEye{
+      margin: 100px 25px 0 25px;
+  }
+}
+
+@keyframes eyes{
+    0%
+    ,99%{ 
+        opacity: 1;
+        display: inline;
+    }
+
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
