@@ -1,0 +1,71 @@
+#serif{
+    .serif-1{
+        position: absolute;
+        top: calc(50% - 150px);
+        left: calc(75% - 200px);
+        animation: serif-disp 0.5s ease 5.0s  forwards;
+        opacity: 0;
+    }
+    .serif-2{
+        position: absolute;
+        bottom: 25%;
+        right: 0;
+        animation: serif-disp 0.5s ease 5.5s  forwards;
+        opacity: 0;
+    }
+
+    .serif-3{
+        position: absolute;
+        top: calc(0% + 30px);
+        left:calc(0% + 30px);
+        animation: serif-disp 0.5s ease 6.0s  forwards;
+        opacity: 0;
+    }
+
+    .serif-4{
+        position: absolute;
+        left: calc(100% - 300px);
+        animation: serif-disp 0.5s ease 6.5s  forwards;
+        opacity: 0;
+    }
+    .serif-5{
+        position: absolute;
+        top: calc(0% + 300px); 
+        left: calc(0% + 200px);
+        animation: serif-disp 0.5s ease 7.0s  forwards;
+        opacity: 0;
+    }
+
+    .serif-6{
+        position: absolute;
+        top: calc(0% + 100px);
+        left: calc(10% + 10px);
+        animation: serif-disp 0.5s ease 7.5s  forwards;
+        opacity: 0;
+    }
+
+    .serif-7{
+        position: absolute;
+        top: calc(25% + 10px);
+        left: calc(50% + 50px);
+        animation: serif-disp 0.5s ease 8.0s  forwards;
+        opacity: 0;
+    }
+
+    .serif-8{
+        position: absolute;
+        top: calc(50% + 30px);
+        left: calc(25% + 10px);
+        animation: serif-disp 0.5s ease 8.5s  forwards;
+        opacity: 0;
+    }
+    p{
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
+@keyframes serif-disp{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
